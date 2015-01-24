@@ -6,3 +6,12 @@ class mymissingmodules::cleanmymac {
       provider => 'appdmg'
     }
 }
+
+class mymissingmodules::flashplayer {
+    package { 'AdobeFlashPlayerInstaller':
+      source => "http://aihdownload.adobe.com/bin/live/AdobeFlashPlayerInstaller_16_ltrosxd_aaa_aih.dmg",
+      provider => 'appdmg'
+    }
+}
+
+
