@@ -1,6 +1,7 @@
 ## Usage
 
-```inclde mymissingmodules::cleanmymac
+```puppet
+inclde mymissingmodules::cleanmymac
 ```
 
 ## Required Puppet Modules
