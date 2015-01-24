@@ -16,12 +16,19 @@ class mymissingmodules::handsoff {
 }
 
 class mymissingmodules::pathfinder {
-    package { 'PathFinder':
+    package { 'Path Finder':
       source => "http://get.cocoatech.com/PF7.zip",
       provider => 'compressed_app'
     }
 }
 
+
+class mymissingmodules::purevpn {
+    package { 'PureVPN':
+      source => "http://www.purevpn.com/software-for-mac.php?reload=1&new=1",
+      provider => 'appdmg'
+    }
+}
 
 
 
