@@ -38,6 +38,13 @@ class mymissingmodules::wireshark {
     }
 }
 
+class mymissingmodules::mat {
+    $version = '1.4.0.20140604'
+    package { 'MemoryAnalyzerTool':
+      source => "http://www.eclipse.org/downloads/download.php?file=/mat/1.4/rcp/MemoryAnalyzer-${version}-macosx.cocoa.x86_64.zip&mirror_id=1002",
+      provider => 'compressed_app'
+    }
+}
 
 
 # Not working
