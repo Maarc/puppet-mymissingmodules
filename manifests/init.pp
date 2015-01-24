@@ -15,6 +15,15 @@ class mymissingmodules::handsoff {
     }
 }
 
+class mymissingmodules::pathfinder {
+    package { 'PathFinder':
+      source => "http://get.cocoatech.com/PF7.zip",
+      provider => 'compressed_app'
+    }
+}
+
+
+
 
 # Does not work currently as "Install Adobe Flash Player.app" is not able to execute and finish the setup
 ## include mymissingmodules::flashplayer
