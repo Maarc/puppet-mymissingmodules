@@ -6,6 +6,7 @@
   include mymissingmodules::pathfinder
   include mymissingmodules::jd
   include mymissingmodules::wireshark
+  include mymissingmodules::mat
 ```
 
 ## Required Puppet Modules
