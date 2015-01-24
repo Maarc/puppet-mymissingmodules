@@ -7,7 +7,6 @@ class mymissingmodules::cleanmymac {
     }
 }
 
-
 class mymissingmodules::handsoff {
     $version = '2.3.3'
     package { 'HandsOff':
@@ -25,7 +24,7 @@ class mymissingmodules::pathfinder {
 
 class mymissingmodules::jd {
     $version = '0.3.5'
-    package { 'HandsOff':
+    package { 'JD-GUI':
       source => "http://jd.benow.ca/jd-gui/downloads/jd-gui-${version}.osx.i686.dmg",
       provider => 'appdmg'
     }
