@@ -6,6 +6,16 @@ class mymissingmodules::cleanmymac {
     }
 }
 
+
+class mymissingmodules::handsoff {
+    $version = '2.3.3'
+    package { 'HandsOff':
+      source => "https://www.oneperiodic.com/files/Hands%20Off!%20v${version}.dmg",
+      provider => 'appdmg'
+    }
+}
+
+
 # Does not work currently as "Install Adobe Flash Player.app" is not able to execute and finish the setup
 ## include mymissingmodules::flashplayer
 #class mymissingmodules::flashplayer {
