@@ -1,7 +1,8 @@
 # include mymissingmodules::cleanmymac
 class mymissingmodules::cleanmymac {
     package { 'CleanMyMac2':
-      source => "http://dl.devmate.com/com.macpaw.CleanMyMac2/CleanMyMac2.dmg",
+      #source => "http://dl.devmate.com/com.macpaw.CleanMyMac2/CleanMyMac2.dmg",
+      source => "http://mhdownloads.s3.amazonaws.com/nano3/CleanMyMac2.dmg",
       provider => 'appdmg'
     }
 }
