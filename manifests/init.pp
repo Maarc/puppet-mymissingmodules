@@ -23,6 +23,15 @@ class mymissingmodules::pathfinder {
     }
 }
 
+class mymissingmodules::jd {
+    $version = '0.3.5'
+    package { 'HandsOff':
+      source => "http://jd.benow.ca/jd-gui/downloads/jd-gui-${version}.osx.i686.dmg",
+      provider => 'appdmg'
+    }
+}
+
+
 # Not working
 #class mymissingmodules::purevpn {
 #    package { 'PureVPN':
