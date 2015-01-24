@@ -30,6 +30,15 @@ class mymissingmodules::jd {
     }
 }
 
+class mymissingmodules::wireshark {
+    $version = '1.12.3'
+    package { 'WireShark':
+      source => "https://1.eu.dl.wireshark.org/osx/Wireshark%20${version}%20Intel%2064.dmg",
+      provider => 'appdmg'
+    }
+}
+
+
 
 # Not working
 #class mymissingmodules::purevpn {
