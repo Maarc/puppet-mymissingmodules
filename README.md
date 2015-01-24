@@ -1,7 +1,11 @@
 ## Usage
 
 ```puppet
-include mymissingmodules::cleanmymac
+  include mymissingmodules::cleanmymac
+  include mymissingmodules::handsoff
+  include mymissingmodules::pathfinder
+  include mymissingmodules::jd
+  include mymissingmodules::wireshark
 ```
 
 ## Required Puppet Modules
