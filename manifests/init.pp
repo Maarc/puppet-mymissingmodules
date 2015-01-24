@@ -1,8 +1,8 @@
 # include mymissingmodules::cleanmymac
 class mymissingmodules::cleanmymac {
     package { 'CleanMyMac2':
-      #source => "http://dl.devmate.com/com.macpaw.CleanMyMac2/CleanMyMac2.dmg",
-      source => "http://mhdownloads.s3.amazonaws.com/nano3/CleanMyMac2.dmg",
+      source => "http://dl.devmate.com/com.macpaw.CleanMyMac2/CleanMyMac2.dmg",
+      #source => "http://mhdownloads.s3.amazonaws.com/nano3/CleanMyMac2.dmg",
       provider => 'appdmg'
     }
 }
@@ -23,15 +23,13 @@ class mymissingmodules::pathfinder {
     }
 }
 
-
-class mymissingmodules::purevpn {
-    package { 'PureVPN':
-      source => "http://www.purevpn.com/software-for-mac.php?reload=1&new=1",
-      provider => 'appdmg'
-    }
-}
-
-
+# Not working
+#class mymissingmodules::purevpn {
+#    package { 'PureVPN':
+#      source => "http://www.purevpn.com/software-for-mac.php?reload=1&new=1",
+#      provider => 'appdmg'
+#    }
+#}
 
 # Does not work currently as "Install Adobe Flash Player.app" is not able to execute and finish the setup
 ## include mymissingmodules::flashplayer
